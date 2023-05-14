@@ -1,0 +1,17 @@
+.address {
+	position: relative;
+
+	&>address {
+		font-style: normal;
+	}
+
+	&::after {
+		position: absolute;
+		content: '';
+		bottom: 0;
+		left: -35px;
+		width: 30px;
+		height: 30px;
+		background: url('../../../../assets/images/icons/map-marker.svg') center center / contain no-repeat;
+	}
+}

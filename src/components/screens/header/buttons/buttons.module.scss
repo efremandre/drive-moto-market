@@ -1,0 +1,33 @@
+.buttons {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+
+	&__like,
+	&__profile,
+	&__cart {
+		display: block;
+		width: 24px;
+		height: 24px;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: contain;
+		transition: transform .6s ease;
+
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+
+	&__like {
+		background-image: url('/images/icons/like.svg');
+	}
+
+	&__profile {
+		background-image: url('/images/icons/person.svg');
+	}
+
+	&__cart {
+		background-image: url('/images/icons/cart.svg');
+	}
+}
